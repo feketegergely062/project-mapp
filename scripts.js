@@ -21,7 +21,7 @@ var polygon = L.polygon([
 ]).addTo(map);
 
 
-circle.bindPopup("ide.");
+circle.bindPopup("ide2.");
 polygon.bindPopup("oda.");
 
 var popup = L.popup()
@@ -40,26 +40,6 @@ function onMapClick(e) {
         .setContent("Itt álsz!!! " + e.latlng.toString())
         .openOn(map);
 }
-
-
-
 map.on('click', onMapClick);
 
-var popup = L.popup()
-    .setLatLng([47.502256, 19.055014])
-    .setContent("Itt allsz.")
-    .openOn(map);
 
-    
-    map.on('click', onMapClick);
-
-    var popup = L.popup();
-
-function onMapClick(e) {
-    popup
-        .setLatLng(e.latlng)
-        .setContent("Itt álsz!!! " + e.latlng.toString())
-        .openOn(map);
-}
-
-map.on('click', onMapClick);
